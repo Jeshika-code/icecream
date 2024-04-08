@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="" class="logo"><img src="images/img3.jpg" alt=""></a>
+        <div  id="menu-icon" class="bx bx-menu"></div>
+        <ul class="navbar">
+            <li><a href="#home" >Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="flavour.html">Flavours</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="#cart" class="cart"><i class="bx bxs-cart-download"></i></a></li>
+        </ul>
+        <div class="top-btn">
+            <a href="#">Order Now</a>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form" onsubmit="return validate()">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" >
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" >
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
